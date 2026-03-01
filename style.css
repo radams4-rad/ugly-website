@@ -23,15 +23,15 @@ p {
 #ribone {
     width: 15em;
    position: relative;
-   top: -1025px;
-   left: 1200px ;
+   top: -625px;
+   left: 300px ;
 }
 
 #ribtwo {
     width: 15em;
    position: relative;
    top: -775px;
-   left: -1075px ;
+   left: -1375px ;
    transform: scaleX(-1);
 }
 
@@ -60,6 +60,60 @@ p {
     opacity: 50%;
 }
 
+.blinking-image {
+    width: 1200; /* Optional: Set image size */
+    position: relative;
+    top: -610px;
+    height: auto;
+    animation-name: blink; /* Link to the @keyframes rule */
+    animation-duration: 3s; /* 1 second per cycle */
+    animation-iteration-count: infinite; /* Repeat forever */
+}
+
+@keyframes blink {
+    0% { opacity: 1; } 
+    50% { opacity: 0; }
+    100% { opacity: 1; } 
+}
+
+.spinner {
+  animation: rotation 2s infinite linear; 
+  position: relative;
+  top: -1000px;
+  left: 200px;
+}
+
+.spinner2 {
+  animation: rotation 6s infinite linear; 
+  position: relative;
+  top: -1300px;
+}
+
+.spinner3 {
+  animation: rotation 10s infinite linear; 
+  width: 30em;
+  position: relative;
+  top: -1300px;
+  left: 400px;
+}
+
+.spinner4 {
+  animation: rotation 10s infinite linear; 
+  width: 30em;
+  position: relative;
+  top: -1800px;
+  left: -850px;
+}
+
+@keyframes rotation {
+  from {
+    transform: rotate(0deg); /* Start at 0 degrees */
+  }
+  to {
+    transform: rotate(360deg); /* Rotate to 360 degrees */
+  }
+}
+
 h1 {
   animation: glitch 3s steps(100) infinite;
   color: #151515;
@@ -73,6 +127,14 @@ h1 {
   h1 {
     font-size: 9em;
   }
+}
+
+h2 {
+    font-family: cursive;
+    font-size: 10em;
+    text-align: center;
+    position: relative;
+    top: -1650px;
 }
 
 @keyframes glitch { 
@@ -113,4 +175,6 @@ h1 {
   97% { text-shadow: -3px 0 0 #0c33f5, 3px 0 0 lime; filter: blur(0);}
   98% { text-shadow: -3px 0 0 #0c33f5, 3px 0 0 lime; filter: blur(0);}
   99% { text-shadow: -3px 0 0 #0c33f5, 3px 0 0 lime; filter: blur(0);}
-  100% { text-shadow: -3px 0 0 #0c33f5, 3px 0 0 lime; filter: blur(0);} }
+  100% { text-shadow: -3px 0 0 #0c33f5, 3px 0 0 lime; filter: blur(0);} 
+}
+
